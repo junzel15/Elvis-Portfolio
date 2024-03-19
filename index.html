@@ -6,8 +6,6 @@
     <title>Elvis Portfolio</title>
 
     <link rel="stylesheet" href="style.css" />
-  
-
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -18,7 +16,6 @@
     />
   </head>
   <body>
-    <script src="index.js"></script>
     <header class="header">
       <nav class="navbar">
         <div class="mobile-row">
@@ -128,60 +125,92 @@
         </div>
       </div>
     </section>
-  
+
     <section id="portfolio" class="work">
-      <h1  style="color: #00abf0; font-size: 67px; font-weight: 700; text-align: center; ">portfolio.</h1>
+      <h1
+        style="
+          color: #00abf0;
+          font-size: 67px;
+          font-weight: 700;
+          text-align: center;
+        "
+      >
+        portfolio.
+      </h1>
       <div class="workcontainer">
-          <div class="imagecontainer">  
-           <div class="imagewrapper1 first">
-             <div class="imagecontent">
-                 <a href="https://junzel15.github.io/Vape-Shop/" style="margin-top: 20px;" target="_blank">Click the Link</a>
-                 <span style="font-size: 15px;">Made with <strong>HTML,CSS,BOOTSTRAP</strong></span>
-              
-             </div>
-             
-           </div>
-          
-           <div class="imagewrapper1 second">
-             <div class="imagecontent">
-               <a href="https://junzel15.github.io/FLOR-Beauty-Products/" style="margin-top: 20px;" target="_blank">Click the Link</a>
-               <span style="font-size: 15px;">Made with <strong>HTML,CSS,JAVASCRIPT</strong></span>
-            
-             </div>
-           </div>
-          
-           <div class="imagewrapper1 third">
-             <div class="imagecontent">     
-               <a href="https://junzel15.github.io/Bogsangit-js-2048-fcb/" style="margin-top: 20px;" target="_blank">Click the Link</a>
-               <span style="font-size: 15px;">Made with <strong>HTML,CSS,JAVASCRIPT</strong></span>
-                          
-             </div>  
+        <div class="imagecontainer">
+          <div class="imagewrapper1 first">
+            <div class="imagecontent">
+              <a
+                href="https://junzel15.github.io/Vape-Shop/"
+                style="margin-top: 20px"
+                target="_blank"
+                >Click the Link</a
+              >
+              <span style="font-size: 15px"
+                >Made with <strong>HTML,CSS,BOOTSTRAP</strong></span
+              >
+            </div>
+          </div>
+          <div class="imagewrapper1 second">
+            <div class="imagecontent">
+              <a
+                href="https://junzel15.github.io/FLOR-Beauty-Products/"
+                style="margin-top: 20px"
+                target="_blank"
+                >Click the Link</a
+              >
+              <span style="font-size: 15px"
+                >Made with <strong>HTML,CSS,JAVASCRIPT</strong></span
+              >
+            </div>
+          </div>
+          <div class="imagewrapper1 third">
+            <div class="imagecontent">
+              <a
+                href="https://junzel15.github.io/Bogsangit-js-2048-fcb/"
+                style="margin-top: 20px"
+                target="_blank"
+                >Click the Link</a
+              >
+              <span style="font-size: 15px"
+                >Made with <strong>HTML,CSS,JAVASCRIPT</strong></span
+              >
+            </div>
           </div>
           <div class="imagewrapper1 fourth">
-            <div class="imagecontent">     
-              <a href="https://f-e-store.onrender.com" style="margin-top: 20px;" target="_blank">Click the Link</a>
-              <span style="font-size: 15px;">Made with <strong>HTML,CSS,JAVASCRIPT,</strong></span>
-              <span style="font-size: 15px;"><strong>REACT.JS, RAPID API</strong></span>
-                         
-            </div>  
-         </div>
-         <div class="imagewrapper1 fifth">
-          <div class="imagecontent">     
-            <a href="https://task-list-application.onrender.com" style="margin-top: 20px;" target="_blank">Click the Link</a>
-            <span style="font-size: 15px;">Made with <strong>HTML,CSS,JAVASCRIPT,</strong></span>
-            <span style="font-size: 15px;"><strong>REACT.JS</strong></span>
-            
-                       
-          </div>  
-       </div>
-    </div>
+            <div class="imagecontent">
+              <a
+                href="https://f-e-store.onrender.com"
+                style="margin-top: 20px"
+                target="_blank"
+                >Click the Link</a
+              >
+              <span style="font-size: 15px"
+                >Made with <strong>HTML,CSS,JAVASCRIPT,</strong></span
+              >
+              <span style="font-size: 15px"
+                ><strong>REACT.JS, RAPID API</strong></span
+              >
+            </div>
+          </div>
+          <div class="imagewrapper1 fifth">
+            <div class="imagecontent">
+              <a
+                href="https://task-list-application.onrender.com"
+                style="margin-top: 20px"
+                target="_blank"
+                >Click the Link</a
+              >
+              <span style="font-size: 15px"
+                >Made with <strong>HTML,CSS,JAVASCRIPT,</strong></span
+              >
+              <span style="font-size: 15px"><strong>REACT.JS</strong></span>
+            </div>
+          </div>
         </div>
-     </div> 
-        
-  </div>
       </div>
-   </div>   
- </section>
+    </section>
 
     <section id="contact" class="contact-section">
       <h3 class="mobile-title">contact.</h3>
@@ -269,46 +298,7 @@
       </div>
     </section>
 
-    <script>
-      console.log("app has started.");
-
-      var menuBtn = document.querySelector(".menu-btn");
-      var navBar = document.querySelector(".navbar");
-
-      menuBtn.addEventListener("click", function () {
-        navBar.classList.toggle("menu-active");
-      });
-
-      var navLinks = document.querySelectorAll(".nav-links a");
-
-      navLinks.forEach(function (navLink) {
-        navLink.addEventListener("click", function () {
-          document.querySelector(".navbar").classList.toggle("menu-active");
-        });
-      });
-
-      var sec = document.querySelectorAll("section");
-
-      window.onscroll = function () {
-        sec.forEach(function (section) {
-          var top = window.scrollY;
-          var offset = section.offsetTop - 60;
-          var height = section.offsetHeight;
-          var id = section.getAttribute("id");
-
-          if (top >= offset && top < offset + height) {
-            navLinks.forEach(function (link) {
-              link.classList.remove("active");
-              document
-                .querySelector("nav a[href*=" + id + "]")
-                .classList.add("active");
-            });
-          }
-        });
-      };
-    </script>
-    
-
     <footer>&copy;ELVIS 2024</footer>
+    <script src="main.js"></script>
   </body>
 </html>
