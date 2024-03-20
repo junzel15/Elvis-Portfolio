@@ -36,109 +36,28 @@ window.onscroll = function () {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-  const hide = document.querySelector("#hide");
-  const container = document.querySelector(".container");
-  const navcontainer = document.querySelector(".navbar");
-  const show = document.querySelector(".menu-btn");
-  const up = document.querySelector(".up");
-  const skillheading = document.querySelector(".skills-section h3");
-  const skillcontent = document.querySelectorAll(".skills-list .skill");
-  const portfolio = document.querySelector("#portfolio");
-  const contact = document.querySelector(".contact-form");
-  const sections = document.querySelectorAll("section");
-  const imagewrappers = document.querySelectorAll(".imagewrapper1");
+  const form = document.getElementById("fcf-form-id");
 
-  show.addEventListener("click", function () {
-    container.style.left = "0";
-    show.style.display = "none";
-  });
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-  hide.addEventListener("click", function () {
-    container.style.left = "-50%";
-    show.style.display = "block";
-  });
+    const name = document.getElementById("Name").value;
+    const email = document.getElementById("Email").value;
+    const message = document.getElementById("Message").value;
 
-  navcontainer.addEventListener("click", function () {
-    container.style.left = "-70%";
-    show.style.display = "block";
-  });
-
-  window.addEventListener("scroll", function () {
-    if (window.scrollY >= 250) {
-      up.style.opacity = "1";
-      up.style.visibility = "visible";
-      up.style.transition = "1s ease";
-    } else {
-      up.style.opacity = "0";
-      up.style.transition = "1s ease";
+    if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+      alert("Please fill in all fields.");
+      return;
     }
 
-    if (window.scrollY >= 700) {
-      skillheading.style.opacity = "1";
-      skillheading.style.transition = "1s ease-in-out";
-      skillheading.style.transform = "scale(1)";
-      skillcontent.forEach((content) => {
-        content.style.opacity = "1";
-        content.style.transform = "translateX(0)";
-      });
-    } else {
-      skillheading.style.opacity = "0";
-      skillheading.style.transition = "1s ease-in-out";
-      skillheading.style.transform = "scale(0)";
-      skillcontent.forEach((content) => {
-        content.style.opacity = "0";
-        content.style.transform = "translateX(-100px)";
-      });
-    }
+    console.log("Name: ", name);
+    console.log("Email: ", email);
+    console.log("Message: ", message);
 
-    if (window.scrollY >= 1350) {
-      portfolio.style.opacity = "1";
-      portfolio.style.transition = "2s ease-in-out";
-    } else {
-      portfolio.style.opacity = "0";
-      portfolio.style.transition = "2s ease-in-out";
-    }
+    document.getElementById("Name").value = "";
+    document.getElementById("Email").value = "";
+    document.getElementById("Message").value = "";
 
-    if (window.scrollY >= 1470) {
-      imagewrappers.forEach((wrapper) => {
-        wrapper.style.opacity = "1";
-        wrapper.style.transition = "1s ease-in-out";
-        wrapper.style.transform = "translateX(0)";
-      });
-    } else {
-      imagewrappers.forEach((wrapper) => {
-        wrapper.style.opacity = "0";
-        wrapper.style.transition = "1s ease-in-out";
-        wrapper.style.transform = "translateX(100px)";
-      });
-    }
-
-    if (window.scrollY >= 1975) {
-      contact.style.opacity = "1";
-      contact.style.transition = "1.5s ease-in-out";
-    } else {
-      contact.style.opacity = "0";
-      contact.style.transition = "1.5s ease-in-out";
-    }
-
-    sections.forEach((section) => {
-      const top = window.scrollY;
-      const offset = section.offsetTop - 60;
-      const height = section.offsetHeight;
-      const id = section.getAttribute("id");
-
-      if (top >= offset && top < offset + height) {
-        const navLinks = document.querySelectorAll(".nav-links a");
-        navLinks.forEach((link) => {
-          link.classList.remove("active");
-        });
-        const activeNavLink = document.querySelector(
-          "nav a[href*='" + id + "']"
-        );
-        if (activeNavLink) {
-          activeNavLink.classList.add("active");
-        }
-      }
-    });
+    alert("Message sent successfully!");
   });
 });
