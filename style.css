@@ -332,6 +332,27 @@ h3 {
   margin-top: 20px;
 }
 
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.skill {
+  text-align: center;
+}
+
+.skill img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.skill span {
+  display: block;
+  margin-top: 10px;
+}
+
 @media only screen and (max-width: 600px) {
   .skills-section {
     padding: 40px 25px;
@@ -868,4 +889,10 @@ img.hover-anim:hover {
 :root {
   background-color: black;
   padding: 1em;
+}
+
+/* CSS for hover effect */
+.hover-effect {
+  transform: scale(1.1); /* Example effect: scale the image */
+  transition: transform 0.3s ease; /* Smooth transition */
 }

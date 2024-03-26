@@ -1,3 +1,30 @@
+// JavaScript for hover effect
+document.addEventListener("DOMContentLoaded", function () {
+  // Skill section
+  const skillImages = document.querySelectorAll(".skills-list .skill img");
+  skillImages.forEach((image) => {
+    image.addEventListener("mouseenter", function () {
+      this.style.transform = "scale(1.1)";
+      this.style.transition = "transform 0.3s ease";
+    });
+    image.addEventListener("mouseleave", function () {
+      this.style.transform = "scale(1)";
+    });
+  });
+
+  // Portfolio section
+  const portfolioImages = document.querySelectorAll(".imagecontent img");
+  portfolioImages.forEach((image) => {
+    image.addEventListener("mouseenter", function () {
+      this.style.transform = "scale(1.1)";
+      this.style.transition = "transform 0.3s ease";
+    });
+    image.addEventListener("mouseleave", function () {
+      this.style.transform = "scale(1)";
+    });
+  });
+});
+
 console.log("app has started.");
 
 var menuBtn = document.querySelector(".menu-btn");
@@ -34,30 +61,3 @@ window.onscroll = function () {
     }
   });
 };
-
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("fcf-form-id");
-
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    const name = document.getElementById("Name").value;
-    const email = document.getElementById("Email").value;
-    const message = document.getElementById("Message").value;
-
-    if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
-      alert("Please fill in all fields.");
-      return;
-    }
-
-    console.log("Name: ", name);
-    console.log("Email: ", email);
-    console.log("Message: ", message);
-
-    document.getElementById("Name").value = "";
-    document.getElementById("Email").value = "";
-    document.getElementById("Message").value = "";
-
-    alert("Message sent successfully!");
-  });
-});
