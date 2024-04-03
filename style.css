@@ -473,16 +473,8 @@ h3 {
   overflow: hidden;
   border: 1px solid black;
 }
-.workcontainer .imagecontainer .imagewrapper1:nth-child(3) {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  background-image: url(images/project2-image.JPG);
-  overflow: hidden;
-  border: 1px solid black;
-}
 
-.workcontainer .imagecontainer .imagewrapper1:nth-child(4) {
+.workcontainer .imagecontainer .imagewrapper1:nth-child(3) {
   height: 100%;
   width: 100%;
   position: relative;
@@ -491,7 +483,7 @@ h3 {
   border: 1px solid black;
 }
 
-.workcontainer .imagecontainer .imagewrapper1:nth-child(5) {
+.workcontainer .imagecontainer .imagewrapper1:nth-child(4) {
   height: 100%;
   width: 100%;
   position: relative;
@@ -500,7 +492,7 @@ h3 {
   border: 1px solid black;
 }
 
-.workcontainer .imagecontainer .imagewrapper1:nth-child(6) {
+.workcontainer .imagecontainer .imagewrapper1:nth-child(5) {
   height: 100%;
   width: 100%;
   position: relative;
