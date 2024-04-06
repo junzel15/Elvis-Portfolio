@@ -478,7 +478,7 @@ h3 {
   height: 100%;
   width: 100%;
   position: relative;
-  background-image: url(images/project6-image.JPG);
+  background-image: url(images/project3-image.JPG);
   overflow: hidden;
   border: 1px solid black;
 }
@@ -497,6 +497,15 @@ h3 {
   width: 100%;
   position: relative;
   background-image: url(images/project5-image.JPG);
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.workcontainer .imagecontainer .imagewrapper1:nth-child(6) {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-image: url(images/project6-image.JPG);
   overflow: hidden;
   border: 1px solid black;
 }
