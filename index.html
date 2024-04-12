@@ -4,67 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elvis Portfolio</title>
-
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
   </head>
   <body>
-    <header class="header">
-      <nav class="navbar">
-        <div class="mobile-row">
-          <img src="images/logo-white.png" class="logo" alt="" />
-          <a href="javascript:void(0);" class="menu-btn active">
-            <i
-              class="fa fa-bars fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
-            ></i>
-          </a>
-        </div>
-        <div class="nav-links">
-          <a href="#home" class="active">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#services">Services</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-    </header>
+    <nav>
+      <span class="logo"><i class='bx bx-buildings'></i> My Portfolio</span>
+      <ul>
+        <li><a href="#home"><i class='bx bx-home'></i> Home</a></li>
+        <li><a href="#about"><i class='bx bx-user'></i> About</a></li>
+        <li><a href="#myskills"><i class='bx bx-award'></i> My Skills</a></li>
+        <li><a href="#projects"><i class='bx bx-folder'></i> Projects</a></li>
+        <li><a href="#contact"><i class='bx bx-envelope'></i> Contact</a></li>
+      </ul>      
+    </nav>
+    
 
-    <section id="home" class="home">
-      <div class="mobile-hero"></div>
-      <div class="home-content">
-        <h1>Hi, I'm <span>Elvis</span></h1>
-        <h2>Website</h2>
-        <h2>Developer</h2>
+    <div id="home" class="content-section">
+      <div class="content-wrapper">
+        <div class="text-content">
+          <h2>
+            <span class="hello-text">HELLO!</span>
+            <span class="im-text">I'M</span>
+            <span class="elvis-text">ELVIS</span>
+          </h2>
+          <h2>
+            <span class="website-text">Website</span>
+            <span class="developer-text">Developer</span>
+          </h2>
+          <p>
+            Coding your vision to reality. Code your dreams. Coding your success
+            story.
+          </p>
+
+          <a href="#projects" class="cta-button"><i class='bx bx-folder-open'></i> View Projects</a>
+          <a href="file:///C:/Users/Elvis/Desktop/Elvis%20RESUME/Elvis%20H.%20Bogsangit%20Jr.%20-%20RESUME.pdf" class="cta-button" download><i class='bx bx-download'></i> Download CV</a>
+          
+        </div>
+        <div class="image-content">
+          <img src="images/home-image.jpg" alt="Image Description" />
+        </div>
       </div>
-    </section>
-
-    <div class="home-sci">
-      <a href="https://www.facebook.com/elvis.bogsangit.3/" target="_blank"
-        ><i class="bx bxl-facebook"></i
-      ></a>
-      <a href="https://twitter.com/ElvisJr92378" target="_blank"
-        ><i class="bx bxl-twitter"></i
-      ></a>
-      <a
-        href="https://www.linkedin.com/in/elvis-bogsangit-jr-8473352b3/"
-        target="_blank"
-        ><i class="bx bxl-linkedin-square"></i
-      ></a>
     </div>
 
-    <section id="about" class="about">
-      <div class="about-content">
-        <h3>about.</h3>
-        <div class="home-content">
-          <h4>Hello! I'm Elvis Bogsangit Jr.</h4>
+    <section id="about" class="aboutme-section">
+      <div>
+        <div class="profile-pic">
+          <img src="images/about-image.JPG" alt="Profile Picture" width="200" />
+        </div>
+        <div class="info">
+          <h1 class="head-about" ><i class='bx bx-user'></i> About Me</h1>
+          <h2>Hello! I'm Elvis Bogsangit Jr</h2>
           <p>
             I'm a 27-year-old resident of Pagadian City, located in the province
             of Zamboanga Del Sur. Holding an Associate Degree in Information
@@ -79,243 +71,170 @@
             believe that patience and persistence are the cornerstones of
             success in this journey.
           </p>
-        </div>
-      </div>
-      <div class="me-content">
-        <img src="images/about-image.JPG" alt="Avatar" width="500" />
-      </div>
-    </section>
-
-    <section id="skills" class="skills-section">
-      <h3>skills.</h3>
-      <div class="skills-list">
-        <div class="row">
-          <div class="skill">
-            <img class="hover-anim" src="images/html-image.png" />
-            <span>HTML</span>
-          </div>
-          <div class="skill">
-            <img class="hover-anim" src="images/css-image.png" />
-            <span>CSS</span>
-          </div>
-          <div class="skill">
-            <img class="hover-anim" src="images/java-images.png" />
-            <span>Javascript</span>
-          </div>
-          <div class="skill">
-            <img class="hover-anim" src="images/react-image.png" />
-            <span>React.JS</span>
-          </div>
-          <div class="skill">
-            <img class="hover-anim" src="images/bp-image.png" />
-            <span>Bootstrap</span>
-          </div>
+          <p>
+            Feel free to browse through my portfolio to see some of my recent
+            work. If you'd like to collaborate or have any inquiries, don't
+            hesitate to contact me</a>.
+          </p>
         </div>
       </div>
     </section>
 
-    <section id="services" class="services">
-      <h3>services.</h3>
-      <div class="row">
-        <div class="column">
-          <img
-            class="hover-anim"
-            src="images/frontend-image.png"
-            width="100%;"
-          />
-          <span>Front End Development</span>
-        </div>
+    <header id="myskills" class="head-skills"><i class='bx bx-cog'></i> <b>My Skills</b></header>
+    <section id="myskills" class="myskills-section">
+      <div class="skill">
+        <img src="images/html-image.png" alt="HTML">
+        <h3>HTML</h3>
+      </div>
+    
+      <div class="skill">
+        <img src="images/css-image.png" alt="CSS">
+        <h3>CSS</h3>
+      </div>
+    
+      <div class="skill">
+        <img src="images/java-images.png" alt="JAVASCRIPT">
+        <h3>JAVASCRIPT</h3>
+      </div>
+
+      <div class="skill">
+        <img src="images/react-image.png" alt="REACT.JS">
+        <h3>REACT.JS</h3>
+      </div>
+    
+      <div class="skill">
+        <img src="images/bp-image.png" alt="BOOTSTRAP">
+        <h3>BOOTSTRAP</h3>
+      </div>
+    
+      <div class="skill">
+        <img src="images/responsive-image.png" alt="RESPONSIVE WEBSITE">
+        <h3>RESPONSIVE WEBSITE</h3>
       </div>
     </section>
+    
 
-    <section id="portfolio" class="work">
-      <h1
-        style="
-          color: #00abf0;
-          font-size: 67px;
-          font-weight: 700;
-          text-align: center;
-        "
-      >
-        portfolio.
-      </h1>
-      <div class="workcontainer">
-        <div class="imagecontainer">
-          <div class="imagewrapper1 first">
-            <div class="imagecontent">
-              <a
-                href="https://junzel15.github.io/Vape-Shop/"
-                style="margin-top: 20px"
-                target="_blank"
-                >Click the Link</a
-              >
-              <span style="font-size: 15px"
-                >Made with <strong>HTML,CSS,BOOTSTRAP</strong></span
-              >
-            </div>
-          </div>
-          <div class="imagewrapper1 second">
-            <div class="imagecontent">
-              <a
-                href="https://junzel15.github.io/FLOR-Beauty-Products/"
-                style="margin-top: 20px"
-                target="_blank"
-                >Click the Link</a
-              >
-              <span style="font-size: 15px"
-                >Made with <strong>HTML,CSS,JAVASCRIPT</strong></span
-              >
-            </div>
-          </div>
-
-          <div class="imagewrapper1 third">
-            <div class="imagecontent">
-              <a
-                href="https://junzel15.github.io/EF-Tech-Cellphones/"
-                style="margin-top: 20px"
-                target="_blank"
-                >Click the Link</a
-              >
-              <span style="font-size: 15px"
-                >Made with <strong>HTML,CSS,JAVASCRIPT,</strong></span
-              >
-            </div>
-          </div>
-          <div class="imagewrapper1 fourth">
-            <div class="imagecontent">
-              <a
-                href="https://el-flo-computer-and-enterprises.onrender.com"
-                style="margin-top: 20px"
-                target="_blank"
-                >Ongoing Coding Click to View</a
-              >
-              <span style="font-size: 15px"
-                >Made with <strong>HTML,CSS,JAVASCRIPT,</strong></span
-              >
-              <span style="font-size: 15px"><strong>REACT.JS</strong></span>
-            </div>
-          </div>
-          <div class="imagewrapper1 fifth">
-            <div class="imagecontent">
-              <a
-                href="https://ef-clothing.onrender.com"
-                style="margin-top: 20px"
-                target="_blank"
-                >Click the Link</a
-              >
-              <span style="font-size: 15px"
-                >Made with <strong>HTML,CSS,JAVASCRIPT,</strong></span
-              >
-              <span style="font-size: 15px"><strong>REACT.JS.</strong></span>
-            </div>
-          </div>
-          <div class="imagewrapper1 Six">
-            <div class="imagecontent">
-              <a
-                href="https://f-e-store.onrender.com"
-                style="margin-top: 20px"
-                target="_blank"
-                >Click the Link</a
-              >
-              <span style="font-size: 15px"
-                >Made with <strong>HTML,CSS,JAVASCRIPT,</strong></span
-              >
-              <span style="font-size: 15px"
-                ><strong>REACT.JS, FAKE STORE API.</strong></span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-      <h3 class="mobile-title">contact.</h3>
-      <div class="details">
-        <a href="https://maps.app.goo.gl/WfieaXq4omTiRzKK9" target="_blank">
-          <i
-            class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
-          ></i>
-          <span>Pagadian City</span>
-        </a>
-        <a href="tel:+63555261873">
-          <i
-            class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
-          ></i>
-          <span>09555261873</span>
-        </a>
-        <a href="mailto:bogsangitelvis@gmail.com">
-          <i
-            class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
-          ></i>
-          <span>bogsangitelvis@gmail.com</span>
-        </a>
-      </div>
-
-      <div class="contact-form">
-        <h3 class="desktop-title">contact.</h3>
-        <div class="fcf-body">
-          <div id="fcf-form">
-            <form id="fcf-form-id" class="fcf-form-class" method="post">
-              <div class="fcf-form-group">
-                <label for="Name" class="fcf-label">Your name</label>
-                <div class="fcf-input-group">
-                  <input
-                    type="text"
-                    id="Name"
-                    name="Name"
-                    class="fcf-form-control"
-                    required=""
-                    fdprocessedid="0hvsz6"
-                  />
-                </div>
+    <header id="projects" class="head-projects"><i class='bx bx-folder-open'></i> <b>My Projects</b></header>
+    <section id="projects" class="projects-section">
+      <div class="project">
+          <img src="images/project1-image.JPG" alt="Project Image">
+          <div class="overlay">
+              <p>HTML, CSS, BOOTSTRAP.</p>
+              <div class="button-container">
+                  <a href="https://junzel15.github.io/Vape-Shop/" class="button">Live Link</a>
+                  <a href="https://github.com/junzel15/Vape-Shop" class="button">Repo Link</a>
               </div>
-
-              <div class="fcf-form-group">
-                <label for="Email" class="fcf-label">Your email address</label>
-                <div class="fcf-input-group">
-                  <input
-                    type="email"
-                    id="Email"
-                    name="Email"
-                    class="fcf-form-control"
-                    required=""
-                    fdprocessedid="qgynd"
-                  />
-                </div>
-              </div>
-
-              <div class="fcf-form-group">
-                <label for="Message" class="fcf-label">Your message</label>
-                <div class="fcf-input-group">
-                  <textarea
-                    id="Message"
-                    name="Message"
-                    class="fcf-form-control"
-                    rows="6"
-                    maxlength="3000"
-                    required=""
-                  ></textarea>
-                </div>
-              </div>
-
-              <div class="fcf-form-group">
-                <button
-                  type="submit"
-                  id="fcf-button"
-                  class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block"
-                  fdprocessedid="v9sfx"
-                >
-                  Send Message
-                </button>
-              </div>
-            </form>
           </div>
-        </div>
       </div>
-    </section>
+  
+      <div class="project">
+          <img src="images/project2-image.JPG" alt="Project Image">
+          <div class="overlay">
+            <p>HTML, CSS, JAVASCRIPT.</p>
+            <div class="button-container">
+                <a href="https://junzel15.github.io/FLOR-Beauty-Products/" class="button">Live Link</a>
+                <a href="https://github.com/junzel15/FLOR-Beauty-Products" class="button">Repo Link</a>
+            </div>
+          </div>
+      </div>
 
-    <footer>&copy;ELVIS 2024</footer>
-    <script src="main.js"></script>
+      <div class="project">
+        <img src="images/project3-image.JPG" alt="Project Image">
+        <div class="overlay">
+          <p>HTML, CSS, JAVASCRIPT.</p>
+          <div class="button-container">
+              <a href="https://junzel15.github.io/EF-Tech-Cellphones/" class="button">Live Link</a>
+              <a href="https://github.com/junzel15/EF-Tech-Cellphones" class="button">Repo Link</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project">
+        <img src="images/project4-image.JPG" alt="Project Image">
+        <div class="overlay">
+          <p>HTML, CSS, JAVASCRIPT, REACT JS.</p>
+          <div class="button-container">
+              <a href="https://el-flo-computer-and-enterprises.onrender.com" class="button">Live Link</a>
+              <a href="https://github.com/junzel15/EL-FLO-Computer-and-Enterprises" class="button">Repo Link</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project">
+      <img src="images/project5-image.JPG" alt="Project Image">
+      <div class="overlay">
+        <p>HTML, CSS, JAVASCRIPT, REACT JS.</p>
+        <div class="button-container">
+            <a href="https://ef-clothing.onrender.com" class="button">Live Link</a>
+            <a href="https://github.com/junzel15/EF-Clothing" class="button">Repo Link</a>
+          </div>
+      </div>
+  </div>
+
+  <div class="project">
+      <img src="images/project6-image.JPG" alt="Project Image">
+      <div class="overlay">
+        <p>HTML, CSS, JAVASCRIPT, REACT JS, FAKE STORE API.</p>
+        <div class="button-container">
+            <a href="https://f-e-store.onrender.com" class="button">Live Link</a>
+            <a href="https://github.com/junzel15/EL-FLO-Store" class="button">Repo Link</a>
+          </div>
+      </div>
+  </div>
+  </section>
+
+  <header id="contact" class="head-contact"><b><i class='bx bxs-contact'></i>Contact Me</b></header>
+  <section id="contact" class="contact-section">
+    <div class="contact-info">
+        <i class='bx bx-envelope'></i> Email: bogsangitelvis@gmail.com<br>
+        <i class='bx bx-map'></i> Address: Dao, Pagadian City, Philippines.<br>
+        <i class='bx bx-phone'></i> Phone: 09555261873
+    </div>
+    <form class="contact-form">
+      <input type="text" name="name" id="name" placeholder="Your Name" required>
+      <input type="email" name="email" id="email" placeholder="Your Email" required>
+      <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+      <button type="button" onclick="sendEmail()"><i class='bx bx-send'></i> Send Message</button>
+    </form>
+    <div id="response-message"></div> 
+</section>
+<footer>
+  <div class="footer-container">
+      <div class="footer-info">
+        <h3><i class='bx bx-info-circle'></i> About Us</h3>
+          <p>Bridging ideas, Building websites.</p>
+      </div>
+      <div class="footer-links">
+        <h3><i class='bx bx-link'></i> Quick Links</h3>
+        <ul>
+            <li><a href="#home"><i class='bx bx-home'></i> Home</a></li>
+            <li><a href="#about"><i class='bx bx-user'></i> About</a></li>
+            <li><a href="#myskills"><i class='bx bx-cog'></i> My Skills</a></li>
+            <li><a href="#projects"><i class='bx bx-folder'></i> Projects</a></li>
+            <li><a href="#contact"><i class='bx bx-envelope'></i> Contact</a></li>
+        </ul>
+    </div>    
+      <div class="footer-contact">
+        <h3><i class='bx bx-envelope'></i> Contact Us</h3>
+        <p><i class='bx bx-envelope'></i> Email: bogsangitelvis@gmail.com</p>
+        <p><i class='bx bx-phone-call'></i> Phone: 09555261873</p>
+        <p><i class='bx bx-map'></i> Address: Dao, Pagadian City, Philippines.</p>
+    </div>
+    
+  </div>
+  <div class="footer-social">
+      <a href="https://www.facebook.com/elvis.bogsangit.3/"><i class='bx bxl-facebook'></i></a>
+      <a href="https://twitter.com/ElvisJr92378"><i class='bx bxl-twitter'></i></a>
+      <a href="https://www.linkedin.com/in/elvis-bogsangit-jr-8473352b3/"><i class='bx bxl-linkedin'></i></a>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 ELVIS WEBSITE PROJECT PORTFOLIO. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+ <script src="main.js"></script>
   </body>
 </html>
