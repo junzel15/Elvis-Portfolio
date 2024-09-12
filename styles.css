@@ -2,12 +2,14 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
-  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #045523, #235ebd, #22c55e, #f97316, #ef4444);
+
+
   margin: 0;
-  padding: 0;
-  background-color: grey;
 }
+
 
 *,
 *::before,
@@ -18,7 +20,7 @@ body {
 /* NAV SECTION */
 
 nav {
-  background-color: #333;
+  background: linear-gradient(135deg, #e4b139, #6c0230, #649cef, #065535, #ccc);
   color: #fff;
   padding: 8px 0;
   display: flex;
@@ -101,14 +103,14 @@ nav ul li a:hover {
 
 .hello-text {
   color: red;
-}
+} 
 
 .im-text {
   color: green;
 }
 
 .website-text {
-  color: #d1df0c;
+  color: #0cdf8b;
 }
 
 .developer-text {
@@ -243,15 +245,23 @@ nav ul li a:hover {
 .head-skills {
   text-align: center;
   font-size: 50px;
-  margin-top: 80px;
+  margin-top: 20px; /* Adjusted to match the section */
+  padding: 20px;
+  grid-column: 1 / -1; /* Make the header span all columns */
 }
+
+.responsive-design {
+  grid-column: span 3; /* Make it take up the full width of the row */
+  justify-self: center;
+}
+
 
 .myskills-section {
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin-top: 50px;
+  margin-top: 0; /* Removed extra margin */
 }
 
 .skill {
@@ -311,6 +321,13 @@ nav ul li a:hover {
   flex-wrap: wrap;
   gap: 20px;
   margin-top: 50px;
+  justify-content: center; /* Center the project blocks */
+}
+
+/* For Project block */
+.centered-project {
+  justify-self: center; /* Centers the project */
+  text-align: center; /* Ensures text and content inside is centered */
 }
 
 .project {
@@ -321,11 +338,10 @@ nav ul li a:hover {
 }
 
 .project img {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
-  margin-left: 25px;
 }
 
 .project:hover img {
@@ -336,8 +352,8 @@ nav ul li a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
@@ -347,7 +363,6 @@ nav ul li a:hover {
   text-align: center;
   opacity: 0;
   transition: opacity 0.3s ease;
-  margin-left: 25px;
 }
 
 .project:hover .overlay {
@@ -383,6 +398,7 @@ nav ul li a:hover {
   background-color: #7aa0da;
 }
 
+/* Responsive design */
 @media (max-width: 768px) {
   .projects-section {
     justify-content: center;
@@ -398,6 +414,7 @@ nav ul li a:hover {
     width: calc(100% - 20px);
   }
 }
+
 
 /* CONTACT SECTION */
 
@@ -489,11 +506,11 @@ h1 {
 /* Footer */
 
 footer {
-  background-color: #333;
   color: #fff;
   padding: 50px 0;
   font-family: Arial, sans-serif;
   text-align: center;
+  background: linear-gradient(135deg, #e4b139, #6c0230, #649cef, #065535, #ccc);
 }
 
 .footer-container {
