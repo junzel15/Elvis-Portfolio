@@ -1,232 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elvis Portfolio</title>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <link rel="stylesheet" href="styles.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-   
+    <title>Elvis - Front-End Developer</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <nav>
-      <span class="logo"><i class='bx bx-buildings'></i> My Portfolio</span>
-      <ul>
-        <li><a href="#home"><i class='bx bx-home'></i> Home</a></li>
-        <li><a href="#about"><i class='bx bx-user'></i> About</a></li>
-        <li><a href="#myskills"><i class='bx bx-award'></i> My Skills</a></li>
-        <li><a href="#projects"><i class='bx bx-folder'></i> Projects</a></li>
-        <li><a href="#contact"><i class='bx bx-envelope'></i> Contact</a></li>
-      </ul>      
+
+  <body id="top">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Elvis H. Bogsangit Jr.</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-none d-sm-block" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    
 
-    <div id="home" class="content-section">
-      <div class="content-wrapper">
-        <div class="text-content">
-          <h2>
-            <span class="hello-text">HELLO!</span>
-            <span class="im-text">I'M</span>
-            <span class="elvis-text">ELVIS</span>
-          </h2>
-          <h2>
-            <span class="website-text">Front-End</span>
-            <span class="developer-text">Developer</span>
-          </h2>
-          <p>
-            Coding your vision to reality. 
-          </p>
-          <p>
-            Code your dreams. 
-          </p>
-          <p>
-            Coding your success
-            story.
-          </p>
-
-          <a href="#projects" class="cta-button"><i class='bx bx-folder-open'></i> View Projects</a>
-          
+    <main class="container-fluid">
+      <div class="container">
+        <!-- TOP FOLD -->
+        <div class="top-fold">
+          <h1>
+            <strong>Front-end Web Developer.</strong><br />
+            Specializing in
+            <strong><em>custom</em></strong> front-end web development.
+          </h1>
         </div>
-        <div class="image-content">
-          <img src="images/home-image.jpg" alt="Image Description" />
-        </div>
-      </div>
-    </div>
+        <div class="row">
+          <div class="col-sm-6 order-sm-2">
+            <img
+              src="images/home-image.jpg"
+              class="mx-auto d-block img-fluid prof-pic slideanim"
+              width="500"
+              alt="alwin rivera"
+              style="border: 5px solid white"
+            />
+          </div>
 
-    <section id="about" class="aboutme-section">
-      <div>
-        <div class="profile-pic">
-          <img src="images/about-image.JPG" alt="Profile Picture" width="200" />
-        </div>
-        <div class="info">
-          <h1 class="head-about" ><i class='bx bx-user'></i> About Me</h1>
-          <h2>Hello! I'm Elvis Bogsangit Jr</h2>
-          <p>
-            Hi, I'm Elvis H. Bogsangit Jr., a passionate Front-End Developer based in Pagadian City, Zamboanga Del Sur. I graduated with an Associate Degree in Information Technology and have spent the past few years self-studying web development. During this time, I've continuously practiced coding by creating personal websites and expanding my portfolio. I specialize in website development, focusing on building responsive, user-friendly websites and applications that deliver seamless experiences. I'm always eager to learn new technologies and tackle challenges to improve my craft.
-          </p>
-          <p>
-            Feel free to browse through my portfolio to see some of my recent
-            work. If you'd like to collaborate or have any inquiries, don't
-            hesitate to contact me</a>.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="myskills" class="myskills-section">
-      <header class="head-skills"><i class='bx bx-cog'></i> <b>My Skills</b></header>
-      
-      <div class="skill">
-        <img src="images/html-image.png" alt="HTML">
-        <h3>HTML</h3>
-      </div>
-    
-      <div class="skill">
-        <img src="images/css-image.png" alt="CSS">
-        <h3>CSS</h3>
-      </div>
-    
-      <div class="skill">
-        <img src="images/java-images.png" alt="JAVASCRIPT">
-        <h3>JAVASCRIPT</h3>
-      </div>
-    
-      <div class="skill">
-        <img src="images/react-image.png" alt="REACT.JS">
-        <h3>REACT.JS</h3>
-      </div>
-    
-      <div class="skill">
-        <img src="images/nextjs-image.png" alt="NEXT.JS">
-        <h3>NEXT.JS</h3>
-      </div>
-    
-      <div class="skill">
-        <img src="images/ts-image.png" alt="TYPESCRIPT">
-        <h3>TYPESCRIPT</h3>
-      </div>
-    
-      <div class="skill">
-        <img src="images/bp-image.png" alt="BOOTSTRAP">
-        <h3>BOOTSTRAP</h3>
-      </div>
-    
-      <div class="skill">
-        <img src="images/tw-image.png" alt="TAILWIND">
-        <h3>TAILWIND</h3>
-      </div>
-    
-      <div class="skill">
-        <img src="images/responsive-image.png" alt="RESPONSIVE WEB DESIGN">
-        <h3>RESPONSIVE WEB DESIGN</h3>
-      </div>
-      
-    </section>
-    
-    
-
-    <header id="projects" class="head-projects"><i class='bx bx-folder-open'></i> <b>My Personal Projects</b></header>
-    <section id="projects" class="projects-section">
-      <div class="project">
-          <img src="images/project1-image.JPG" alt="Project Image">
-          <div class="overlay">
-              <p>HTML, CSS, BOOTSTRAP.</p>
-              <div class="button-container">
-                  <a href="https://junzel15.github.io/Vape-Shop/" class="button">Live Link</a>
+          <div class="col-sm-6 order-sm-1 align-self-end">
+            <!-- INFO -->
+            <div class="info-container">
+              <div class="row">
+                <div class="col">
+                  <div class="info">
+                    <span>CONTACT</span>
+                    <div>
+                      <a href="mailto:aimrivera@gmail.com"
+                        >bosangitelvis@gmail.com</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="info">
+                    <span>LOCATION</span>
+                    <div>
+                      <a href="#">Pagadian City, ZDS, Philippines</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-          </div>
-      </div>
-  
-      <div class="project">
-          <img src="images/project2-image.JPG" alt="Project Image">
-          <div class="overlay">
-            <p>HTML, CSS, JAVASCRIPT.</p>
-            <div class="button-container">
-                <a href="https://junzel15.github.io/FLOR-Beauty-Products/" class="button">Live Link</a>
             </div>
           </div>
-      </div>
-
-      <div class="project">
-        <img src="images/project3-image.JPG" alt="Project Image">
-        <div class="overlay">
-          <p>HTML, CSS, JAVASCRIPT.</p>
-          <div class="button-container">
-              <a href="https://junzel15.github.io/EF-Tech-Cellphones/" class="button">Live Link</a>
-            </div>
         </div>
-    </div>
 
-    <div class="project">
-        <img src="images/project4-image.JPG" alt="Project Image">
-        <div class="overlay">
-          <p>HTML, CSS, JAVASCRIPT, REACT JS.</p>
-          <div class="button-container">
-              <a href="https://el-flo-computer-and-enterprises.onrender.com" class="button">Live Link</a>
-            </div>
+        <!-- SUBHEADING -->
+        <div class="subheading-container">
+          <h2>
+            I am passionate about solving business problems through
+            human-centered design. Curious by nature and business-minded.
+          </h2>
         </div>
-    </div>
 
-    <div class="project">
-      <img src="images/project5-image.JPG" alt="Project Image">
-      <div class="overlay">
-        <p>HTML, CSS, JAVASCRIPT, REACT JS.</p>
-        <div class="button-container">
-            <a href="https://ef-clothing.onrender.com" class="button">Live Link</a>
+        <!-- SKILLS -->
+        <div class="skills-container">
+          <h3>My Skills</h3>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="skill first">
+                <img
+                  src="images/user-experience-design.JPG"
+                  alt="user experience design"
+                  class="img-fluid d-block rounded-circle slideanim"
+                  width="161"
+                />
+                <div class="desc">
+                  <span>Front End Development</span>
+                  <p>
+                    Building responsive, interactive, and dynamic websites using
+                    Html, Css, JavaScript, TypeScript, TailWind, Bootstrap and
+                    modern frameworks like React and Next.js.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="skill">
+                <img
+                  src="images/responsive-web-design.JPG"
+                  alt="user experience design"
+                  class="img-fluid d-block rounded-circle slideanim"
+                  width="161"
+                />
+                <div class="desc">
+                  <span>Responsive Web Design</span>
+                  <p>
+                    I create layouts that adjust to any type of screen size,
+                    desktop, tablet or mobile
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="skill">
+                <img
+                  src="images/user-interface-desing.jpg"
+                  alt="user experience design"
+                  class="img-fluid d-block rounded-circle slideanim"
+                  width="161"
+                />
+                <div class="desc">
+                  <span>User Interface Design</span>
+                  <p>
+                    Designing user-centric, modern interfaces for digital
+                    products or services which helps transfers the brand’s
+                    strengths and visual assets to a product’s interface.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-      </div>
-  </div>
+        </div>
 
-  <div class="project">
-      <img src="images/project6-image.JPG" alt="Project Image">
-      <div class="overlay">
-        <p>HTML, CSS, JAVASCRIPT, REACT JS, FAKE STORE API.</p>
-        <div class="button-container">
-            <a href="https://f-e-store.onrender.com" class="button">Live Link</a>
+        <!-- WORK -->
+        <div class="work-container" id="work">
+          <h3>My Personal Work</h3>
+          <div class="work">
+            <div class="row">
+              <div class="col-lg-8">
+                <div
+                  id="work1"
+                  class="carousel slide slideanim"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#work1"
+                      data-bs-slide-to="0"
+                      class="active"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#work1"
+                      data-bs-slide-to="1"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="images/project1.PNG"
+                        alt="Jims Enterprises"
+                        class="mx-auto d-block img-fluid slideanim"
+                        width="500"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="images/project1.PNG"
+                        alt="Jims Enterprises"
+                        class="mx-auto d-block img-fluid"
+                        width="500"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#work1"
+                    data-bs-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#work1"
+                    data-bs-slide="next"
+                  >
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="info">
+                  <a
+                    href="https://to-do-app-amber-eight.vercel.app/"
+                    target="_blank"
+                  >
+                    <div class="d-flex align-items-center">
+                      <span>To Do App List</span>
+                      <img
+                        src="images/arrow-up-right.png"
+                        alt="arrow"
+                        class="img-fluid"
+                        width="30"
+                      />
+                    </div>
+                  </a>
+                  <p>
+                    The To Do App List is a simple and intuitive task management
+                    application that allows users to create, edit, and delete
+                    tasks with ease. Featuring a responsive design, it provides
+                    a seamless experience across devices, helping users
+                    prioritize and organize their daily activities efficiently.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-      </div>
-  </div>
 
-  <div class="project centered-project">
-    <img src="images/project7-image.JPG" alt="Project Image">
-    <div class="overlay">
-      <p>HTML, CSS, TYPESCRIPT, NEXT.JS, TAILWIND, SUPABASE.</p>
-      <div class="button-container">
-        <a href="https://to-do-app-amber-eight.vercel.app/" class="button">Live Link</a>
+    
+          <div class="work">
+            <div class="row">
+              <div class="col-lg-8">
+                <div
+                  id="work3"
+                  class="carousel slide slideanim"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#work3"
+                      data-bs-slide-to="0"
+                      class="active"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#work3"
+                      data-bs-slide-to="1"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="images/alwin-rivera-work.JPG"
+                        alt=""
+                        class="mx-auto d-block img-fluid"
+                        width="500"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="images/alwin-rivera-work2.JPG"
+                        alt=""
+                        class="mx-auto d-block img-fluid"
+                        width="500"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#work3"
+                    data-bs-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#work3"
+                    data-bs-slide="next"
+                  >
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="info">
+                  <a
+                    href="https://alwinrivera.github.io/myPortfolio/"
+                    target="_blank"
+                  >
+                    <div class="d-flex align-items-center">
+                      <span>Dashboard</span>
+                      <img
+                        src="images/arrow-up-right.png"
+                        alt="arrow"
+                        class="img-fluid"
+                        width="30"
+                      />
+                    </div>
+                  </a>
+                  <p>DASHBOARD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+   
+
+       
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="container-fluid" id="contact">
+      <!-- CONTACT -->
+      <div class="container">
+        <div class="clearfix">
+          <a href="#top">
+            <img
+              src="images/arrow-up.png"
+              alt="arrow"
+              class="img-fluid d-block float-end"
+              width="38"
+            />
+          </a>
+        </div>
+        <div class="row">
+          <div class="col-lg-8">
+            <h3>Contact</h3>
+            <p>If you have a general enquiry, please drop me an email.</p>
+          </div>
+          <ul class="nav flex-column flex-sm-row">
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:aimrivera@gmail.com"
+                >bogsangitelvis@gmail.com</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://github.com/junzel15"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- COPYRIGHT -->
+        <footer>
+          <span>&copy; Elvis H. Bogsangit Jr.</span>
+        </footer>
       </div>
     </div>
-  </div>
-  
-  </section>
 
-  <header id="contact" class="head-contact"><b><i class='bx bxs-contact'></i>Contact Me</b></header>
-  <section id="contact" class="contact-section">
-    <div class="contact-info">
-        <i class='bx bx-envelope'></i> Email: bogsangitelvis@gmail.com<br>
-        <i class='bx bx-map'></i> Address: Dao, Pagadian City, Philippines.<br>
-        <i class='bx bx-phone'></i> Phone: 09555261873
-    </div>
-    <form class="contact-form">
-      <input type="text" name="name" id="name" placeholder="Your Name" required>
-      <input type="email" name="email" id="email" placeholder="Your Email" required>
-      <textarea name="message" id="message" placeholder="Your Message" required></textarea>
-      <button type="button" onclick="sendEmail()"><i class='bx bx-send'></i> Send Message</button>
-    </form>
-    <div id="response-message"></div> 
-</section>
-<footer>
-  <div class="footer-social">
-      <a href="https://www.facebook.com/elvis.bogsangit.3/"><i class='bx bxl-facebook'></i></a>
-      <a href="https://twitter.com/ElvisJr92378"><i class='bx bxl-twitter'></i></a>
-      <a href="https://www.linkedin.com/in/elvis-bogsangit-jr-8473352b3/"><i class='bx bxl-linkedin'></i></a>
-  </div>
-  <div class="footer-bottom">
-      <p>ELVIS WEBSITE PROJECT PORTFOLIO</p>
-  </div>
-</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          $(".slideanim").each(function () {
+            var pos = $(this).offset().top;
 
- <script src="main.js"></script>
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+              $(this).addClass("slide");
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
